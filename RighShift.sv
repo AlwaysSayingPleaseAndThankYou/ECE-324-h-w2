@@ -3,9 +3,9 @@ write a module that shifts 8-bit input data[7:0] right logically by the number o
 the shifted result is available on  8-bit output shout[7:0]
 */
 module TwoBitRightShift(
-	input logic shiftBits [0:1],
-	input logic memory [0:7],
-	output logic shout [0:7]
+	input logic [0:1]shiftBit,
+	input logic [0:7] memory,
+	output logic [0:7] shout
 	);
 
 //shout is right shift of memory by shiftbits bits
