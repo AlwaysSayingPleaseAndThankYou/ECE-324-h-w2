@@ -9,6 +9,6 @@ module TwoBitRightShift(
 	);
 
 //shout is right shift of memory by shiftbits bits
-assign shout = shiftBits >> memory;
+assign shout = memory >> shiftBit;
 
 endmodule
