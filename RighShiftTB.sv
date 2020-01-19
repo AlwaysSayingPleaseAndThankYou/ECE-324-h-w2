@@ -13,11 +13,13 @@ TwoBitRightShift UUT(
 
 // up to three bit right shift
 //capable of going to 7 bit right shift with this implimentation
-initial begin
-	#10 memory = 8'b10101010; shiftBit = 3'b000;
-	#10 memory = 8'b10101010; shiftBit = 3'b001;
-	#10 memory = 8'b10101010; shiftBit = 3'b010;
-	#10 memory = 8'b10101010; shiftBit = 3'b011;
-
+	initial begin
+		#10 memory = 8'b10101010; shiftBit = 3'b000;
+		#10 memory = 8'b10101010; shiftBit = 3'b001;
+		#10 memory = 8'b10101010; shiftBit = 3'b010;
+		#10 memory = 8'b10101010; shiftBit = 3'b011;
+		#10 $stop
+	end 
+endmodule
 
 
