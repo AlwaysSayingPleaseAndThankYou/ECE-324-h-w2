@@ -4,7 +4,7 @@
  Choose data values that make it easy to see that the result on shout is 
  correctly shifted. 
 */
-'timescale 1 ns/10 ps
+`timescale 1 ns/10 ps
 module barrel_shifter;
 	logic [7:0] data;
 	logic [2:0] shift;
