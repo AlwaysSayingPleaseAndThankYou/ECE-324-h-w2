@@ -5,7 +5,7 @@ the shifted result is available on  8-bit output shout[7:0]
 */
 module TwoBitRightShift(
 	input logic [0:1] shiftBit,
-	input logic [0:7] memory,
+	input logic [7:0] memory,
 	output logic [0:7] shout
 	);
 
