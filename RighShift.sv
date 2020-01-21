@@ -4,7 +4,9 @@ by the number of positions specified by 3-bit input shift[2:0] ;
 the shifted result is available on  8-bit output shout[7:0]
 */
 module TwoBitRightShift(
-	input logic [0:1] shiftBit,
+	// the endianness of input memory has to be reversed 
+	// for memory to accomidate logic
+	input logic [0:2] shiftBit,
 	input logic [7:0] memory,
 	output logic [0:7] shout
 	);
