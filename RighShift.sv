@@ -6,10 +6,11 @@ the shifted result is available on  8-bit output shout[7:0]
 module TwoBitRightShift(
 	// the endianness of input memory has to be reversed 
 	// for memory to accomidate logic
-	input logic [0:2] shiftBit,
+	input logic [2:0] shiftBit,
 	input logic [7:0] memory,
 	output logic [0:7] shout
 	);
+//TDODO: make little endian 
 
 
 // Shout is right shift of memory by shiftbits bits
